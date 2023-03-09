@@ -1,0 +1,416 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.ham, .mobileMenu {
+  display: none;
+}
+
+header {
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px 140px;
+  color: white;
+}
+header .navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  text-align: justify;
+}
+.menu ul li {
+  cursor: pointer;
+  text-align: justify;
+  margin: 0 30px;
+  font-family: "Alata", sans-serif;
+}
+.menu ul :first-child {
+  margin-left: 0;
+}
+.menu ul :last-child {
+  margin-right: 0;
+}
+.menu ul :hover div {
+  border-bottom: 2px white solid;
+  padding-bottom: 14px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: -16px;
+}
+
+.hero {
+  border: white 2px solid;
+  width: 60%;
+  padding: 50px 40px;
+  font-family: "josefin sans", sans-serif;
+  font-size: 72px;
+  margin: 250px 0;
+}
+
+.content {
+  margin: 200px auto;
+  width: 1440px;
+}
+.content .first img {
+  width: 70%;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -375px;
+}
+.content .about {
+  background: white;
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  padding: 140px;
+  left: 800px;
+  bottom: 60px;
+}
+.content .about h3 {
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 60px;
+  font-family: "josefin sans", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: "alata", sans-serif;
+  color: #777;
+  line-height: 2;
+}
+
+.creations {
+  display: flex;
+  justify-content: space-between;
+}
+.creations .button {
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  font-family: "alata", sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+.grid {
+  margin: 100px 0 150px 0;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+  height: 600px;
+  display: flex;
+  position: relative;
+}
+.card :hover > img {
+  filter: contrast(0.4);
+  filter: saturate(0.6);
+}
+.card img {
+  z-index: 1;
+}
+.card h4 {
+  font-family: "josefin sans", sans-serif;
+  color: white;
+  font-size: 40px;
+  padding: 40px;
+  align-self: flex-end;
+  position: absolute;
+  z-index: 12;
+}
+
+.gradient {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  height: 400px;
+  bottom: 0;
+  position: absolute;
+  width: 330px;
+  z-index: 10;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 150px;
+}
+footer .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+footer .bottom {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+}
+.socials img {
+  width: 32px;
+  margin: 0 10px;
+}
+.socials :last-child {
+  margin: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  .ham {
+    position: absolute;
+    right: 25px;
+    display: block;
+    z-index: 5;
+  }
+  header {
+    padding: 30px 20px;
+    height: 600px;
+    width: auto;
+    background-size: cover;
+    background-image: url("./images/mobile/image-hero.jpg");
+  }
+  header .navigation {
+    position: fixed;
+    padding: 30px 5%;
+    width: 90%;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3764705882);
+  }
+  header .navigation .logo {
+    width: 100px;
+    z-index: 5;
+  }
+  header .navigation .menu {
+    display: none;
+  }
+  header .navigation .mobileMenu ul {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    position: absolute;
+    padding: 230px 40px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    top: -30px;
+  }
+  header .navigation .mobileMenu ul li {
+    cursor: pointer;
+    text-align: justify;
+    margin: 20px 0;
+    font-family: "josefin sans", sans-serif;
+    font-size: 36px;
+  }
+  header .navigation .mobileMenu ul :first-child {
+    margin-left: 0;
+  }
+  header .navigation .mobileMenu ul :last-child {
+    margin-right: 0;
+  }
+  header .navigation .mobileMenu ul ul {
+    flex-direction: column;
+  }
+  header .navigation .mobileMenu ul ul li {
+    margin: 20px;
+    font-family: "josefin sans", sans-serif;
+  }
+  .hero {
+    padding: 20px;
+    margin: 200px auto;
+    width: 80%;
+  }
+  .hero h2 {
+    font-size: 40px;
+  }
+  .content {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .content .first img {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+  }
+  .content .about {
+    z-index: 1;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    padding: 0;
+    margin: 0 auto 450px auto;
+    left: 0;
+    top: 360px;
+    text-align: center;
+  }
+  .content h3 {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 90%;
+    margin: 15px auto;
+  }
+  .card .gradient {
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  }
+  .card img {
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+  }
+  .card h4 {
+    font-size: 20px;
+    margin: 15px;
+    padding: 0;
+  }
+  .creations .button {
+    position: absolute;
+    bottom: -1900px;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    position: relative;
+    top: 1100px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 475px;
+    width: 100%;
+  }
+  footer .logo {
+    scale: 40%;
+    margin-top: 20px;
+  }
+  footer .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+  footer .bottom .menu ul {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    padding: 0;
+    margin: 0;
+  }
+  footer .bottom .menu ul li {
+    height: 20px;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+  }
+  footer .bottom .copyright {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    bottom: -140px;
+    justify-content: center;
+  }
+  footer .top {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+  footer .top .socials {
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+  }
+  .bottom {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .socials {
+    display: flex;
+  }
+  .socials img {
+    width: 32px;
+    margin: 0 10px;
+  }
+  .socials :last-child {
+    margin: 0;
+  }
+  .mobileHide {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

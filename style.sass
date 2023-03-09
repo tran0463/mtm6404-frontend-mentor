@@ -1,0 +1,359 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 	
+	display: block
+
+body 
+	line-height: 1
+
+ol, ul 
+	list-style: none
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+#container
+	max-width: 1440px
+	margin: auto
+.ham, .mobileMenu
+	display: none
+header
+	background-image: url('./images/desktop/image-hero.jpg')
+	background-size: contain
+	background-repeat: no-repeat
+	padding: 80px 140px
+	color: white
+	.navigation
+		display: flex
+		width: 100%
+		align-items: center
+		justify-content: space-between
+
+.menu ul 
+	display: flex
+	text-align: justify
+
+	li	
+		cursor: pointer
+		text-align: justify
+		margin: 0 30px
+		font-family: 'Alata', sans-serif
+	:first-child
+		margin-left: 0
+	:last-child
+		margin-right: 0
+	:hover div
+		border-bottom: 2px white solid
+		padding-bottom: 14px
+		margin-left: 20%
+		margin-right: 20%
+		margin-bottom: -16px
+
+.hero
+	border: white 2px solid
+	width: 60%
+	padding: 50px 40px
+	font-family: "josefin sans", sans-serif
+	font-size: 72px
+	margin: 250px 0
+
+.content
+	margin: 200px auto
+	width: 1440px
+	.first img
+		width: 70%
+		position: relative
+		z-index: -1
+		margin-bottom: -375px
+	.about
+		background: white
+		position: relative
+		z-index: 1
+		width: 500px
+		padding: 140px
+		left: 800px
+		bottom: 60px
+		h3
+			margin-bottom: 50px
+
+h3
+	font-size: 60px
+	font-family: 'josefin sans', sans-serif
+
+p
+	font-size: 16px
+	font-family: 'alata', sans-serif
+	color: #777
+	line-height: 2
+
+.creations 
+	display: flex
+	justify-content: space-between
+	.button
+		border: solid 2px black
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 10px 50px
+		font-family: 'alata', sans-serif
+		font-size: 16px
+		letter-spacing: 5px
+
+.grid
+	margin: 100px 0 150px 0
+	display: grid
+	gap: 40px
+	grid-template-columns: repeat(4, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+
+.card
+	height: 600px
+	align-content:flex-end
+	display: flex
+	position: relative	
+	:hover > img
+		filter: contrast(.4)
+		filter: saturate(.6)
+	img
+		z-index: 1
+
+			
+	h4
+		font-family: 'josefin sans', sans-serif
+		color: white
+		font-size: 40px
+		padding: 40px
+		align-self: flex-end
+		position: absolute
+		z-index: 12
+
+.gradient
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8))
+	height: 400px
+	bottom: 0
+	position: absolute
+	width: 330px
+	z-index: 10
+
+
+footer
+	background-color: black
+	display: flex
+	flex-direction: column
+	padding: 40px 150px
+	.top
+		display: flex
+		width: 100%
+		justify-content: space-between
+	.bottom
+		display: flex
+		margin: 20px 0
+		width: 100%
+		color: white
+		justify-content: space-between
+		align-items: center	
+.socials
+	display: flex
+	img
+		width: 32px
+		margin: 0 10px
+	:last-child
+		margin: 0
+
+@media only screen and ( max-width:  375px)
+	body
+		// overflow-x: hidden
+	.ham
+		position: absolute
+		right: 25px
+		display: block
+		z-index: 5
+	header
+		padding: 30px 20px
+		height: 600px
+		width: auto
+		background-size: cover
+		background-image: url('./images/mobile/image-hero.jpg')
+
+		.navigation
+			position: fixed
+			padding: 30px 5%
+			width:90%
+			top: 0
+			z-index: 20
+			left: 0
+			background-color: #00000060
+
+			.logo
+				width: 100px
+				z-index: 5
+			.menu
+				display: none
+				
+			.mobileMenu ul 
+				position: sticky
+				display: flex
+				flex-direction: column
+				text-align: justify
+				position: absolute
+				padding: 230px 40px
+				left: 0
+				background-color: black
+				width: 100%
+				height: 400px		
+				top: -30px	
+				li	
+					cursor: pointer
+					text-align: justify
+					margin: 20px 0
+					font-family: 'josefin sans', sans-serif
+					font-size: 36px
+				:first-child
+					margin-left: 0
+				:last-child
+					margin-right: 0
+				ul		
+					flex-direction: column
+					li
+						margin: 20px
+						font-family: 'josefin sans', sans-serif	
+	.hero 
+		padding: 20px
+		margin: 200px auto
+		width: 80%
+		h2 
+			font-size: 40px
+
+	.content
+		margin: 0 auto
+		width: 90%
+		.first img
+			width: 100%
+			position: relative
+			top: -50px
+			z-index: -1
+		.about
+			z-index: 1
+			color: black
+			background-color: #00000000
+			width: 90%
+			padding: 0
+			margin: 0 auto 450px auto
+			left: 0
+			top: 360px
+			text-align: center
+		h3
+			font-size: 36px
+			text-align: center
+			width: 100%
+			margin: 0 auto
+
+	.grid 
+		margin-top: 50px
+		display: flex
+		flex-direction: column
+		height: 100px
+		width: 90%
+		margin: 15px auto
+	.card
+		.gradient
+			width: 70%
+			height: 100%
+			background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.6))
+		img
+			width: 100%
+			height: 100px
+			margin: 0px auto
+		h4
+			font-size: 20px
+			margin: 15px
+			padding: 0
+
+	.creations
+		.button
+			position: absolute
+			bottom: -1900px
+			left: 25%
+			right: 25%
+			text-align: center
+			padding: 10px 20px
+
+		
+	footer
+		background-color: black
+		display: flex
+		position: relative
+		top: 1100px
+		flex-direction: column
+		padding: 0
+		margin: 0
+		height: 475px
+		width: 100%
+		.logo
+			scale: 40%
+			margin-top: 20px
+		.bottom
+			display: flex
+			flex-direction: column
+			margin-top: -10px
+			.menu ul
+				margin: 0
+				flex-direction: column
+				width: 100%
+				height: 140px
+				padding: 0
+				margin: 0
+				li
+					height: 20px
+					margin: 10px auto
+					text-align: center
+					width: 100%
+			.copyright
+				display: flex
+				position: relative
+				width: 100%
+				margin: 0 auto
+				bottom: -140px
+				justify-content: center
+		.top
+			flex-direction: column
+			width: 100%
+			padding: 0
+			justify-content: space-between
+			.socials
+				position: relative
+				top: 250px
+				margin: 0 auto
+	.bottom
+		margin: 0 auto
+		padding: 0
+		width: 100%
+		color: white
+		justify-content: space-between
+		align-items: center	
+
+
+	.socials
+		display: flex
+		img
+			width: 32px
+			margin: 0 10px
+		:last-child
+			margin: 0
+	.mobileHide 
+		display: none

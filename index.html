@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopstudios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+</head>
+<body>    
+    <script>            
+        function toggleMenu() {
+            let $menu = document.getElementById('menu')
+            let $button = document.getElementById('ham')
+
+            if ($menu.style.display === "block") {
+                $menu.style.display = "none";
+                $button.src="images/icon-hamburger.svg"
+            } else {
+                $menu.style.display = "block";
+                $button.src="images/icon-close.svg"
+            }        
+        }
+    </script>
+    <header>
+        <div id="container">
+            <div class="navigation">
+                <img src="./images/logo.svg" alt="Loopstudios Logo" class="logo">
+                <img src="images/icon-hamburger.svg" alt="" id="ham" class="ham" onclick="toggleMenu()">
+                <div class="menu"><ul>
+                    <li>About<div></div></li>
+                    <li>Careers<div></div></li>
+                    <li>Events<div></div></li>
+                    <li>Products<div></div></li>
+                    <li>Support <div></div></li>
+                </ul></div>
+                <div class="mobileMenu" id="menu"><ul>
+                    <li>ABOUT<div></div></li>
+                    <li>CARREERS<div></div></li>
+                    <li>EVENTS<div></div></li>
+                    <li>PRODUCTS<div></div></li>
+                    <li>SUPPORT <div></div></li>
+                </ul></div>
+            </div>
+        <div class="hero">
+            <h2>IMMERSIVE <br>
+            EXPERIENCES <br>
+            THAT DELIVER</h2>
+        </div>        </div>
+
+    </header>
+
+    <div class="content">
+        <div class="first">
+            <img src="./images/desktop/image-interactive.jpg" alt="Guy on VR">
+            <div class="about">
+                <h3>THE LEADER IN INTERACTIVE VR</h3>
+                <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+            </div>
+        </div>
+
+        <div class="creations">
+            <h3>OUR CREATIONS</h3>
+            <div class="button">SEE ALL</div>
+        </div>
+
+        <div class="grid mobileHide">
+            <div class="card ">
+                <img src="images/desktop/image-deep-earth.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>DEEP <br> EARTH</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-night-arcade.jpg" alt="">
+                <div class="gradient"></div>
+
+                <h4>NIGHT <br> ARCADE</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-soccer-team.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>SOCCER <br> TEAM VR</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-grid.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>THE <br> GRID</h4>
+            </div>
+
+            <div class="card ">
+                <img src="images/desktop/image-from-above.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>FROM UP <br> ABOVE VR</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-pocket-borealis.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>POCKET <br> BOREALIS</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-curiosity.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>THE <br> CURIOSITY</h4>
+            </div>
+            <div class="card ">
+                <img src="images/desktop/image-fisheye.jpg" alt="">
+                <div class="gradient"></div>
+                <h4>MAKE IT <br> FISHEYE</h4>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="card ">
+            <img src="images/mobile/image-deep-earth.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>DEEP <br> EARTH</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-night-arcade.jpg" alt="">
+            <div class="gradient"></div>
+
+            <h4>NIGHT <br> ARCADE</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-soccer-team.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>SOCCER <br> TEAM VR</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-grid.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>THE <br> GRID</h4>
+        </div>
+
+        <div class="card ">
+            <img src="images/mobile/image-from-above.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>FROM UP <br> ABOVE VR</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-pocket-borealis.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>POCKET <br> BOREALIS</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-curiosity.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>THE <br> CURIOSITY</h4>
+        </div>
+        <div class="card ">
+            <img src="images/mobile/image-fisheye.jpg" alt="">
+            <div class="gradient"></div>
+            <h4>MAKE IT <br> FISHEYE</h4>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="top">
+            <img src="./images/logo.svg" alt="Loopstudios Logo" class="logo">
+            <div class="socials">
+                <img src="images/icon-facebook.svg" alt="">
+                <img src="images/icon-twitter.svg" alt="">
+                <img src="images/icon-pinterest.svg" alt="">
+                <img src="images/icon-instagram.svg" alt="">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="menu"><ul>
+                <li>About<div></div></li>
+                <li>Careers<div></div></li>
+                <li>Events<div></div></li>
+                <li>Products<div></div></li>
+                <li>Support <div></div></li>
+            </ul></div>
+            <div class="copyright">
+                <p>© 2021 Loopstudios. All rights reserved.</p>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
