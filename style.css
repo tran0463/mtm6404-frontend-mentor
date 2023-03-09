@@ -148,14 +148,22 @@ p {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.card:hover img {
+  filter: saturate(40%) brightness(1.5) contrast(0.4);
+}
+.card:hover h4 {
+  color: black;
+}
+.card:hover .gradient {
+  background-color: white;
+  opacity: 20%;
+  height: 100%;
+}
+
 .card {
   height: 600px;
   display: flex;
   position: relative;
-}
-.card :hover > img {
-  filter: contrast(0.4);
-  filter: saturate(0.6);
 }
 .card img {
   z-index: 1;
@@ -208,6 +216,16 @@ footer .bottom {
 }
 .socials :last-child {
   margin: 0;
+}
+
+.desktopHide {
+  display: none;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 375px) {

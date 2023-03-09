@@ -120,15 +120,21 @@ p
 	gap: 40px
 	grid-template-columns: repeat(4, 1fr)
 	grid-template-rows: repeat(2, 1fr)
-
+.card:hover 
+	img
+		filter: saturate(40%) brightness(1.5) contrast(.4) 
+	h4
+		color: black
+	.gradient
+		background-color: white
+		opacity: 20%
+		height:100%
 .card
 	height: 600px
 	align-content:flex-end
 	display: flex
 	position: relative	
-	:hover > img
-		filter: contrast(.4)
-		filter: saturate(.6)
+
 	img
 		z-index: 1
 
@@ -141,6 +147,7 @@ p
 		align-self: flex-end
 		position: absolute
 		z-index: 12
+
 
 .gradient
 	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8))
@@ -174,6 +181,13 @@ footer
 		margin: 0 10px
 	:last-child
 		margin: 0
+.desktopHide 
+	display: none
+
+.button:hover
+	background-color: black
+	color: white
+	cursor: pointer
 
 @media only screen and ( max-width:  375px)
 	body
